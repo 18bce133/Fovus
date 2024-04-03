@@ -1,0 +1,4 @@
+# CDK metadata
+cdk.out/
+# Node.js
+node_modules/

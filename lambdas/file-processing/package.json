@@ -1,0 +1,16 @@
+{
+  "name": "file-processing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.544.0",
+    "@aws-sdk/util-base64-node": "^3.209.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

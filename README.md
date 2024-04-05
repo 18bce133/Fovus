@@ -26,6 +26,9 @@ This is a Cloud Development Kit (CDK) project for deploying infrastructure and s
 8. Install frontend dependencies: `npm install`
 9. Start the frontend development server: `npm start`
 10. Open the app in your browser at `http://localhost:3000`
+11. Enter Text and upload a file to the S3 bucket. A sample file is provided in the root directory with name `sample_upload.txt`.
+12. Output file will be stored in the S3 bucket named `my-output-file-bucket` and also stored in DynamoDB. 
+13. After successful execution, you destroy the resources using `npm run cdk destroy -- --all`.
 
 ## Frontend
 The frontend application is a React app that allows users to upload files to the S3 bucket.

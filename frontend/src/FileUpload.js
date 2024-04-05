@@ -4,8 +4,15 @@ import React, { useRef } from 'react';
 import { S3 } from 'aws-sdk';
 import config from './config.json';
 
-const s3 = new S3();
 const AWS = require('aws-sdk');
+
+AWS.config.update({
+  accessKeyId: config.REACT_APP_AWS_ACCESS_KEY_ID,
+  secretAccessKey: config.REACT_APP_AWS_SECRET_ACCESS_KEY,
+  region: 'us-east-1',
+});
+
+const s3 = new S3({ region: 'us-east-1', credentials: { accessKeyId: config.REACT_APP_AWS_ACCESS_KEY_ID, secretAccessKey: config.REACT_APP_AWS_SECRET_ACCESS_KEY }});
 const ssm = new AWS.SSM();
 
 async function getApiGatewayUrl() {
@@ -23,11 +30,6 @@ const FileUpload = () => {
   const inputFileRef = useRef(null);
 
   const handleSubmit = async (e) => {
-    AWS.config.update({
-      accessKeyId: config.REACT_APP_AWS_ACCESS_KEY_ID,
-      secretAccessKey: config.REACT_APP_AWS_SECRET_ACCESS_KEY,
-      region: 'us-east-1',
-    });
   
     e.preventDefault();
     const inputText = inputTextRef.current.value;

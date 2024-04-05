@@ -16,19 +16,21 @@ This is a Cloud Development Kit (CDK) project for deploying infrastructure and s
 ## Getting Started
 1. Clone the repository
 2. Install project dependencies: `npm install`
-3. Bootstrap the CDK environment: `npm run cdk bootstrap`
-4. Set AWS credentials:
-   - `setx AWS_ACCESS_KEY_ID AKIA4MTWLPJ22AL7P7X7`
-   - `setx AWS_SECRET_ACCESS_KEY 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`
-5. Bootstrap the CDK environment again: `npm run cdk bootstrap`
-6. Deploy the CDK stack: `npm run cdk deploy -- --all --require-approval never`
-7. Navigate to the `frontend` directory: `cd frontend`
-8. Install frontend dependencies: `npm install`
-9. Start the frontend development server: `npm start`
-10. Open the app in your browser at `http://localhost:3000`
-11. Enter Text and upload a file to the S3 bucket. A sample file is provided in the root directory with name `sample_upload.txt`.
-12. Output file will be stored in the S3 bucket named `my-output-file-bucket` and also stored in DynamoDB. 
-13. After successful execution, you destroy the resources using `npm run cdk destroy -- --all`.
+3. Set AWS credentials:
+   - `setx AWS_ACCESS_KEY_ID=AKIA4MTWLPJ22AL7P7X7`
+   - `setx AWS_SECRET_ACCESS_KEY=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`
+   - OR 
+   - `set AWS_ACCESS_KEY_ID=AKIA4MTWLPJ22AL7P`
+   - `set AWS_SECRET_ACCESS_KEY=TdZEPtrJmqsKsTfV8R9roDEfkufJg2HlhXKvfFuB`
+4. Bootstrap the CDK environment again: `npm run cdk bootstrap`
+5. Deploy the CDK stack: `npm run cdk deploy -- --all --require-approval never`
+6. Navigate to the `frontend` directory: `cd frontend`
+7. Install frontend dependencies: `npm install`
+8. Start the frontend development server: `npm start`
+9.  Open the app in your browser at `http://localhost:3000`
+10. Enter Text and upload a file to the S3 bucket. A sample file is provided in the root directory with name `sample_upload.txt`.
+11. Output file will be stored in the S3 bucket named `my-output-file-bucket` and also stored in DynamoDB. 
+12. After successful execution, you destroy the resources using `npm run cdk destroy -- --all`.
 
 ## Frontend
 The frontend application is a React app that allows users to upload files to the S3 bucket.

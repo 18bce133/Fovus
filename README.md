@@ -17,11 +17,11 @@ This is a Cloud Development Kit (CDK) project for deploying infrastructure and s
 1. Clone the repository
 2. Install project dependencies: `npm install`
 3. Set AWS credentials:
-   - `setx AWS_ACCESS_KEY_ID=AKIA4MTWLPJ22AL7P7X7`
-   - `setx AWS_SECRET_ACCESS_KEY=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`
+   - `setx AWS_ACCESS_KEY_ID=`
+   - `setx AWS_SECRET_ACCESS_KEY=`
    - OR 
-   - `set AWS_ACCESS_KEY_ID=AKIA4MTWLPJ22AL7P`
-   - `set AWS_SECRET_ACCESS_KEY=TdZEPtrJmqsKsTfV8R9roDEfkufJg2HlhXKvfFuB`
+   - `set AWS_ACCESS_KEY_ID=`
+   - `set AWS_SECRET_ACCESS_KEY=`
 4. Bootstrap the CDK environment again: `npm run cdk bootstrap`
 5. Deploy the CDK stack: `npm run cdk deploy -- --all --require-approval never`
 6. Navigate to the `frontend` directory: `cd frontend`
